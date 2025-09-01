@@ -17,7 +17,7 @@ import subtasksRouter from "./routes/subtasks.js";
 
 const app = express();
 
-const allowed = [process.env.CLIENT_URL, "http://127.0.0.1:5173"];
+const allowed = [process.env.CLIENT_URL, "https://todo-ai-frontend.onrender.com"];
 app.use(
   cors({
     origin: (origin, cb) => cb(null, !origin || allowed.includes(origin)),
